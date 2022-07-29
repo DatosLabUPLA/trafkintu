@@ -1,0 +1,127 @@
+<?php
+
+//CONECTAMOS CON LA BD
+require "conexion.php";
+
+echo "<h3 >INFORMACIÓN </h3>";
+echo "<br>";
+
+//HACEMOS LA CONSULTA A LA BD
+$r1 = "SELECT texto,pregunta FROM arbol WHERE nodo = 8";
+
+$texto = '';
+$pregunta = true;
+ 
+if ($resultado = mysqli_query($enlace, $r1)) {
+ 
+	if($resultado->num_rows === 0)
+    {
+        echo 'No existe el nodo';
+    }
+	else
+	{
+		while ($fila = mysqli_fetch_row($resultado)) {
+			$texto 	  = $fila[0];
+			$pregunta = $fila[1];
+		}
+		if($pregunta == 0){
+			echo "<div class='contenedorPregunta'>";
+			echo "<h2>" .$texto. "</h2>";
+			echo "</div>";
+		}
+	}
+    mysqli_free_result($resultado);
+}
+
+$r2 = "SELECT texto,pregunta FROM arbol WHERE nodo = 9";
+
+$texto = '';
+$pregunta = true;
+ 
+if ($resultado = mysqli_query($enlace, $r2)) {
+ 
+	if($resultado->num_rows === 0)
+    {
+        echo 'No existe el nodo';
+    }
+	else
+	{
+		while ($fila = mysqli_fetch_row($resultado)) {
+			$texto 	  = $fila[0];
+			$pregunta = $fila[1];
+		}
+		if($pregunta == 0){
+			echo "<div class='contenedorPregunta'>";
+			echo "<h2>" .$texto. "</h2>";
+			echo "</div>";
+		}
+	}
+    mysqli_free_result($resultado);
+}
+
+?>
+
+<br>
+
+<?php
+	echo "<a class='boton' href='index.php?n=1&r=0'>Volver a probar</a>";
+?>
+
+
+//------------------------------------------------------
+//SI HAY UN NODO DE REPUESTO SE AÑADE A LA LISTA (ARRAY)
+if($nodoRepuesto!=0){
+
+	session_start();	//iniciamos la sesión
+	$nodosRepuesto =array();	//creamos el array
+ 
+
+	//COMPROBAMOS SI EXISTE LA VARIABLE DE SESIÓN (ES DECIR, SI HEMOS GUARDADO ALGÚN NODO EN EL QUE DUDÁSEMOS)
+	if(isset($_SESSION['nodosRepuesto'])){
+		
+		$nodosRepuesto = $_SESSION['nodosRepuesto'];	//Guardamos el array de la sesión en el array vacío
+		array_push($nodosRepuesto,$nodoRepuesto);		//añadimos el nodo a la lista
+		$_SESSION['nodosRepuesto']=$nodosRepuesto;		//Volvemos a guardar el array de la sesión, actualizado
+		
+	}
+	
+	
+	else{
+		array_push($nodosRepuesto,$nodoRepuesto);		//añadimos el nodo a la lista
+		$_SESSION['nodosRepuesto']=$nodosRepuesto;
+	}
+	
+	
+}
+
+<h1>Adivinador DatosLab</h1>
+<hr>
+<br>
+<form action="../../form-result.php" method="post" target="_blank">
+
+  <p>
+
+    Busca entre nuestros conceptos: <input type="search" name="busqueda" list="listaconceptos">
+
+    <input type="submit" value="Buscar">
+
+  </p>
+
+</form>
+
+<datalist id="listaconceptos">
+
+  <option value="Moneda Social">
+
+  <option value="Moneda Complementaria">
+
+  <option value="Moneda Digital">
+
+  <option value="Moneda Social Digital">
+
+</datalist>
+<?php
+	echo "<div class=''>";
+	echo "<a class='button' href='index.php?n=1&r=0'>Volver a probar</a>";
+	echo "</div>";
+?>
