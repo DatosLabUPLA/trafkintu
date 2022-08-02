@@ -13,10 +13,10 @@ if(getenv("STATE") == "prod") {
     $mysql_port = "3306";
 
     //BASE DE DATOS
-    $mysql_bd = "adivinadorlab";
+    $mysql_db = "adivinadorlab";
 }
 
-$enlace = mysqli_connect($mysql_host, $mysql_usuario, $mysql_password, $mysql_bd, $mysql_port);
+$enlace = mysqli_connect($mysql_host, $mysql_usuario, $mysql_password, $mysql_db, $mysql_port);
 
 /* COMPROBAR LA CONEXIÓN */
 if (mysqli_connect_errno()){
