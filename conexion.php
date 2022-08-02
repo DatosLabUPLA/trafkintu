@@ -16,7 +16,7 @@ if(getenv("STATE") == "prod") {
     $mysql_db = "adivinadorlab";
 }
 
-$enlace = mysqli_connect($mysql_host, $mysql_usuario, $mysql_password, $mysql_db, $mysql_port);
+$enlace = mysqli_connect($mysql_host, $mysql_usuario, $mysql_password, $mysql_db);
 
 /* COMPROBAR LA CONEXIÓN */
 if (mysqli_connect_errno()){
