@@ -4,7 +4,8 @@
 	<title>TRAFKINTU</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--CSS-->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="codigo_guia/css/style.css">
+
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PPSG2HWBLM"></script>
 	<script>
