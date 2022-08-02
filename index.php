@@ -22,7 +22,7 @@
 
 <main>
 <?php
-phpinfo();
+
 //CONECTAMOS CON LA BD
 require "conexion.php";
 
