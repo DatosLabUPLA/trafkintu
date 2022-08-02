@@ -5,6 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--CSS-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PPSG2HWBLM"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-PPSG2HWBLM');
+	</script>
+
 </head>
 
 <body>	
