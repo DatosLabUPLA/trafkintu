@@ -1,6 +1,6 @@
 <?php
 
-if(getenv("STATE") !== false && getenv("STATE") == "prod") {
+if(getenv("STATE") == "prod") {
     $mysql_host = getenv('HOST');
     $mysql_usuario = getenv('USERNAME');
     $mysql_password = getenv('PASSWORD');
