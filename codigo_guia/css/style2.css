@@ -3,9 +3,8 @@ body {
     max-width: 40em;
     font-family: sans-serif;
 	text-align: center;
-	background-image: url(../background2.jpg);
+	background-image: url(/background1.png);
 	background-size: 100% 100%;
-	background-attachment: fixed;
 	padding-left: 5rem;
 	}
 
@@ -21,17 +20,19 @@ body {
 	text-align: center;
 	vertical-align: middle; 
 	line-height: 50px;       
-	background-color: #eee;
-	float:right;
+	background-color: #804db4;
+	float:left;
 	text-decoration: none;
+	
 }
 
 a:visited {
-	color: #000;
+	color: #FFFFFF;
   }
 
 .button:hover{
-	background-color: #fb9424;
+	background-color: #97cb7d
+	;
 	color: #FFFFFF;
 }
 

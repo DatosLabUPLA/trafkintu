@@ -1,7 +1,8 @@
 <html>
 
 <head>
-	<title>TRAFKINTU</title>
+
+	<title>TRAFKIN-U</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--CSS-->
 	<link rel="stylesheet" type="text/css" href="codigo_guia/css/style.css">
@@ -12,14 +13,14 @@
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
-
 	gtag('config', 'G-PPSG2HWBLM');
 	</script>
 
 </head>
 
 <body>	
-<h1>TRAFKINTU</h1>
+<!--<h1>TRAFKIN-U</h1>-->
+<br><br><br><br><br><br><br><br><br><br>
 
 <main>
 <?php
@@ -92,7 +93,7 @@ if ($resultado = mysqli_query($enlace, $consulta)) {
 			$texto 	  = $fila[0];
 			$pregunta = $fila[1];
 		}
-		//SI NO ES UNA PREGUNTA ES UN RESULTADO FINAL (TRAFKINTU DA UNA RESPUESTA)
+		//SI NO ES UNA PREGUNTA ES UN RESULTADO FINAL (TRAFKIN-U DA UNA RESPUESTA)
 		/*echo "<h2>PREGUNTA #".$numPregunta."</h2>";*/
 		if($pregunta == 0){
 			echo "<div class='contenedorPregunta'>";
@@ -120,7 +121,7 @@ if ($resultado = mysqli_query($enlace, $consulta)) {
 <?php
 	echo "<h3><div class=''>";
 	echo "<a class=button href='index.php?n=1&r=0'>Volver a probar</a>";
-	echo "<a class=button href='datos.php'>Datos de TRAFKINTU</a>";
+	echo "<a class=button href='datos.php'>Datos de TRAFKIN-U</a>";
 	echo "</h3></div>";
 ?>
 </footer>

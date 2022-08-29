@@ -6,7 +6,7 @@ if(getenv("STATE") == "prod") {
     $mysql_password = getenv('PASSWORD');
     $mysql_port = getenv('PORT');
     $mysql_db = getenv('DATABASE');
-}else {
+}else{
     $mysql_host = "localhost";
     $mysql_usuario = "root";
     $mysql_password = "";
