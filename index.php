@@ -106,8 +106,8 @@ if ($resultado = mysqli_query($enlace, $consulta)) {
 			echo "<h2>". $texto. "</h>";
 			echo "</div>";
 			echo "<div class='' >";
-			echo "<h3><a class='button' color='#000' href='index.php?n=".$nodoSi."&r=0&np=".$proxPregunta."'>SI</a></h3>";
-			echo "<h3><a class='button' href='index.php?n=".$nodoNo."&r=0&np=".$proxPregunta."'>NO</a></h3>";
+			echo "<h3><a class='button' color='#000' href='index.php?n=".$nodoSi."&r=0&np=".$proxPregunta."'> 🢀</a></h3>";
+			echo "<h3><a class='button' href='index.php?n=".$nodoNo."&r=0&np=".$proxPregunta."'>🢂</a></h3>";
 			echo "<div class='limpiar'></div>";
 			echo "</div>";
 		}
@@ -121,7 +121,7 @@ if ($resultado = mysqli_query($enlace, $consulta)) {
 <?php
 	echo "<h3><div class=''>";
 	echo "<a class=button href='index.php?n=1&r=0'>Volver a probar</a>";
-	echo "<a class=button href='datos.php'>Datos de TRAFKIN-U</a>";
+	echo "<a class=button href='https://labsed.cl/'>Labsed</a>";
 	echo "</h3></div>";
 ?>
 </footer>
