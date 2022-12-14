@@ -4,9 +4,6 @@ body {
 	margin: auto;
     font-family: sans-serif;
 	text-align: center;
-	background-image: url(/trafkinu.png);
-	background-size: 100% 100%;
-	background-attachment: fixed;
 }
 
 .contenedorPregunta{
@@ -77,4 +74,10 @@ h3  {
 	text-align: center;
 	font-family: "Segoe UI";
 	padding-top: 1rem;
+}
+
+.background {
+	background-image: url(/trafkinu.png);
+	background-size: 100% 100%;
+	background-attachment: fixed;
 }
