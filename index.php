@@ -124,7 +124,8 @@ if ($resultado = mysqli_query($enlace, $consulta)) {
 	echo "<a class=button href='https://labsed.cl/'>Labsed</a>";
 	echo "</h3></div>";
 ?>
-</footer>
 
+</footer>
+<a class='pie' href="www.upla.cl" >www.upla.cl</a>
 </body>
 </html>
