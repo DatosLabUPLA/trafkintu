@@ -20,7 +20,6 @@
 
 <body>	
 <!--<h1>TRAFKIN-U</h1>-->
-<div class='background'></div>
 <br><br><br><br><br><br><br><br><br><br>
 
 <main>
@@ -127,6 +126,6 @@ if ($resultado = mysqli_query($enlace, $consulta)) {
 ?>
 
 </footer>
-<a class='pie' href="www.upla.cl" >www.upla.cl</a>
+<div class='pie'></div>
 </body>
 </html>
