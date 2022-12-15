@@ -1,12 +1,13 @@
 body {
 	padding-top: 7rem;
     max-width: 40em;
-	margin: auto;
+    margin: auto;
     font-family: sans-serif;
-	text-align: center;
-	background-image: url(/trafkinu.png);
-	background-size: 100% 100%;
-	background-attachment: fixed;
+    text-align: center;
+    background-image: url(/trafkinu.png);
+    background-size: 60% 45%;
+    background-repeat: no-repeat;
+    background-position: top;
 	}
 
 .contenedorPregunta{
