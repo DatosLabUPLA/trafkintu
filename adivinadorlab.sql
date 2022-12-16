@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-12-2022 a las 20:25:12
+-- Tiempo de generación: 16-12-2022 a las 21:29:14
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 7.4.33
 
@@ -41,9 +41,9 @@ INSERT INTO `arbol` (`nodo`, `texto`, `pregunta`) VALUES
 (1, 'Bienvenido a la aplicación TRAFKIN-U. Quieres conocer sobre el proyecto ⇦ u otras experiencias de intercambio virtual ⇨', 1),
 (2, 'Trafkin ⇦ - Memoria Valpo ⇨', 1),
 (3, 'Bancos de tiempo ⇦ - Moneda complementaria ⇨', 1),
-(4, 'respuesta 4', 0),
-(5, 'respuesta 5', 0),
-(6, 'respuesta 6', 0),
+(4, 'Copia el siguiente enlace y visita Trafkin https://communities.cyclos.org/sed/trafkin\n', 0),
+(5, 'Copia el siguiente enlace para acceder a la Memoria Valpo https://memoriavalpo.labsed.cl/', 0),
+(6, 'En los siguientes enlaces encontraras información sobre los Bancos de Tiempo https://bancotiempo.cl/ Banco de Tiempo Universitario https://bancodetiempouniversitario.cl/', 0),
 (7, 'Moneda Comunitaria (Crédito Mutuo) ⇦ - Moneda Local (Municipal) ⇨', 1),
 (8, 'respuesta 8', 0),
 (9, 'respuesta 9', 0),
@@ -65,10 +65,10 @@ INSERT INTO `arbol` (`nodo`, `texto`, `pregunta`) VALUES
 (25, 'respuesta 25', 0),
 (26, 'respuesta 26', 0),
 (27, 'respuesta 27', 0),
-(28, 'respuesta 28', 0),
-(29, 'respuesta 29', 0),
-(30, 'respuesta 30', 0),
-(31, 'respuesta 31', 0);
+(28, 'Moneda Comunitaria LATAM: Valpo (Chile), PAR (Argentina), Sol (Uruguay), Luna (Colombia), Jurupi (Ecuador), Muyu (Ecuador), Mixuxa (Mexico), Tumin (México).', 0),
+(29, 'Moneda Comunitaria resto del mundo: Turuta, Puma.', 0),
+(30, 'Moneda Local Municipal LATAM: NA', 0),
+(31, 'Moneda Local resto del mundo: BristolPound (Reino Unido), SolViolette (Francia).', 0);
 
 --
 -- Índices para tablas volcadas
